@@ -50,14 +50,15 @@ const AllProducts = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <button
-                    className="border border-black rounded-full  w-2 h-2 md:w-5 md:h-5 flex items-center justify-center"
+                    className="border border-black rounded-full  w-4 h-4 md:w-5 md:h-5 flex items-center justify-center"
                     // onClick={() => decreaseBtn(item)}
                   >
                     -
                   </button>
-                  {/* {quantity} */} 0
+                  {/* {quantity} */}{" "}
+                  <p className="font-bold text-xs md:text-1xl">0</p>
                   <button
-                    className="border border-black rounded-full w-2 md:w-5 md:h-5 flex items-center justify-center"
+                    className="border border-black rounded-full w-4 h-4 md:w-5 md:h-5 flex items-center justify-center"
                     // onClick={() => increaseBtn(item)}
                   >
                     +

@@ -19,8 +19,8 @@ export default {
       },
 
       backgroundImage: {
-        "header-pattern": "url('src/assets/headerimg.png')",
-        "headerMob-pattern": "url('src/assets/headermob.png')",
+        "header-pattern": "url('/src/assets/headerimg.png')",
+        "headerMob-pattern": "url('/src/assets/headermob.png')",
       },
     },
   },
