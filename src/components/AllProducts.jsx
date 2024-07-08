@@ -65,16 +65,16 @@ const AllProducts = () => {
                   </button>
                 </div>
               </div>
-              <div className="flex  justify-between">
-                <p className="font-bold text-xs md:text-1xl">{item.name}</p>
-                <p className="text-[0.7rem] md:text-1xl">{item.inches}</p>
+              <div className="flex justify-between items-center">
+                <p className="font-bold text-xs md:text-sm">{item.name}</p>
+                <p className="text-[0.7rem] md:text-sm">{item.inches}</p>
               </div>
-              <p className="text-sm md:text-1xl">{item.price}</p>
-              <p className="line-through text-sm md:text-1xl">
+              <p className="text-sm md:text-[16px]">{item.price}</p>
+              <p className="line-through text-xs md:text-[14px]">
                 {item.slashPricw}
               </p>
               <button
-                className="bg-sageGreen text-white rounded-lg h-[48px] w-full flex items-center justify-center gap-4"
+                className="bg-sageGreen text-white rounded-lg h-[48px] w-full flex items-center justify-center gap-4  mt-14"
                 // onClick={() => handleAddToCart(item)}
               >
                 <span>+</span>Add to cart

@@ -10,13 +10,18 @@ import {
 } from "@chakra-ui/react";
 const PaymentSuccess = ({ isOpen, onClose }) => {
   return (
-    <div className="mx-auto font-lato">
-      <Modal isOpen={isOpen} onClose={onClose} size="md">
+    <div className="mx-auto font-lato px-4 ">
+      <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
 
-        <ModalContent margin="12rem auto">
+        <ModalContent
+          w="95%" // Set the width to 100% of the screen
+          //   maxW="720px" // Ensure the content doesn't exceed 700px
+          margin="12rem auto" // Center the modal horizontally with responsive margin
+          // padding="1rem" // Remove default padding for smaller screens
+          boxShadow="lg"
+        >
           <ModalHeader>
-            {" "}
             <button
               // mr={3}
               onClick={onClose}

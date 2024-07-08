@@ -15,7 +15,7 @@ export const allProducts = [
   {
     id: 1,
     img: bed1,
-    name: "Queen Size Bedding Platform",
+    name: "Queen Size Bedding and Platform",
     inches: "20 inches",
     price: "NGN 200,000",
     slashPricw: "NGN 250,000",
@@ -23,7 +23,7 @@ export const allProducts = [
   {
     id: 2,
     img: bed2,
-    name: "King Size Bedding Platform",
+    name: "King Size Bedding and Platform",
     inches: "30 inches",
     price: "NGN 500,000",
     slashPricw: "NGN 650,000",
@@ -31,7 +31,7 @@ export const allProducts = [
   {
     id: 3,
     img: bed3,
-    name: "Queen Size Bedding Platform",
+    name: "Queen Size Bedding and Platform",
     inches: "25 inches",
     price: "NGN 250,000",
     slashPricw: "NGN 350,000",
@@ -39,7 +39,7 @@ export const allProducts = [
   {
     id: 4,
     img: bed4,
-    name: "Queen Size Bedding Platform",
+    name: "Queen Size Bedding  and Platform",
     inches: "24 inches",
     price: "NGN 250,000",
     slashPricw: "NGN 300,000",
@@ -47,7 +47,7 @@ export const allProducts = [
   {
     id: 5,
     img: bed5,
-    name: "Queen Size Bedding Platform",
+    name: "Queen Size Bedding and Platform",
     inches: "20 inches",
     price: "NGN 125,000",
     slashPricw: "NGN 130,000",
@@ -55,7 +55,7 @@ export const allProducts = [
   {
     id: 6,
     img: bed6,
-    name: "King Size Bedding Platform",
+    name: "King Size Bedding and Platform",
     inches: "29 inches",
     price: "NGN 600,000",
     slashPricw: "NGN 800,000",
@@ -63,7 +63,7 @@ export const allProducts = [
   {
     id: 7,
     img: bed7,
-    name: "Queen Size Bedding Platform",
+    name: "Queen Size Bedding  and Platform",
     inches: "20 inches",
     price: "NGN 125,000",
     slashPricw: "NGN 130,000",
@@ -71,7 +71,7 @@ export const allProducts = [
   {
     id: 8,
     img: bed8,
-    name: "King Size Bedding Platform",
+    name: "King Size Bedding and Platform",
     inches: "29 inches",
     price: "NGN 600,000",
     slashPricw: "NGN 800,000",
@@ -79,7 +79,7 @@ export const allProducts = [
   {
     id: 9,
     img: bed9,
-    name: "Queen Size Bedding Platform",
+    name: "Queen Size Bedding  and Platform",
     inches: "24 inches",
     price: "NGN 250,000",
     slashPricw: "NGN 300,000",
@@ -87,7 +87,7 @@ export const allProducts = [
   {
     id: 10,
     img: bed10,
-    name: "Queen Size Bedding Platform",
+    name: "Queen Size Bedding and Platform",
     inches: "20 inches",
     price: "NGN 200,000",
     slashPricw: "NGN 250,000",
@@ -95,7 +95,7 @@ export const allProducts = [
   {
     id: 11,
     img: bed11,
-    name: "King Size Bedding Platform",
+    name: "King Size Bedding and Platform",
     inches: "30 inches",
     price: "NGN 500,000",
     slashPricw: "NGN 650,000",
@@ -103,7 +103,7 @@ export const allProducts = [
   {
     id: 12,
     img: bed12,
-    name: "Queen Size Bedding Platform",
+    name: "Queen Size Bedding and Platform",
     inches: "25 inches",
     price: "NGN 250,000",
     slashPricw: "NGN 350,000",

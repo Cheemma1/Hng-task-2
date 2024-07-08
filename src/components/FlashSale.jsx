@@ -35,7 +35,7 @@ import {
   MenuItem,
   Divider,
   Stack,
-  Icon,
+
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 

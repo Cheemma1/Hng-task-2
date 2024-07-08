@@ -1,10 +1,10 @@
-import { ArrowDownIcon } from "@chakra-ui/icons";
+
 import React from "react";
 import arrowDown from "../assets/arrow-down.png";
 
 const DeliveryForm = () => {
   return (
-    <div className="border border-lightGrey rounded-md font-lato p-2 bg-white">
+    <div className="border border-lightGrey rounded-md font-lato p-2 bg-white mt-6">
       <h2 className="font-semibold mb-8">Delivery Address</h2>
       <form action="">
         <label htmlFor="email" className="font-semibold">
@@ -68,18 +68,19 @@ const DeliveryForm = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-4 my-4">
+        <div className="flex gap-4  my-4">
           <div className="font-semibold">
             <label htmlFor="postal code">
-              Postal Code<span className="text-red-600">*</span>
+              Area Number<span className="text-red-600">*</span>
             </label>
             <br />
             <input
               type="text"
-              className="w-[50%] border border-lightGrey rounded-md outline-none"
+              placeholder="+234"
+              className="w-[24%] border border-lightGrey rounded-md outline-none text-black placeholder:text-black"
             />
           </div>
-          <div className="w-full font-semibold">
+          <div className="w-full font-semibold flex-1">
             <label htmlFor="phone number">
               Phone Number <span className="text-red-600">*</span>
             </label>
