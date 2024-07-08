@@ -1,15 +1,15 @@
-import bed1 from "../assets/bed1.png";
-import bed2 from "../assets/bed2.png";
-import bed3 from "../assets/bed3.png";
-import bed4 from "../assets/bed4.png";
-import bed5 from "../assets/bed5.png";
-import bed6 from "../assets/bed6.png";
-import bed7 from "../assets/bed7.png";
-import bed8 from "../assets/bed8.png";
-import bed9 from "../assets/bed9.png";
-import bed10 from "../assets/bed10.png";
-import bed11 from "../assets/bed11.png";
-import bed12 from "../assets/bed12.png";
+import bed1 from "../assets/bed22.png";
+import bed2 from "../assets/bed22.png";
+import bed3 from "../assets/bed33.png";
+import bed4 from "../assets/bed44.png";
+import bed5 from "../assets/bed55.png";
+import bed6 from "../assets/bed66.png";
+import bed7 from "../assets/bed55.png";
+import bed8 from "../assets/bed66.png";
+import bed9 from "../assets/bed44.png";
+import bed10 from "../assets/bed22.png";
+import bed11 from "../assets/bed22.png";
+import bed12 from "../assets/bed33.png";
 
 export const allProducts = [
   {
@@ -95,7 +95,7 @@ export const allProducts = [
   {
     id: 11,
     img: bed11,
-    name: "King Size Bedding and Platform",
+    name: "King Size Bedding ",
     inches: "30 inches",
     price: "NGN 500,000",
     slashPricw: "NGN 650,000",

@@ -8,6 +8,7 @@ import {
   ModalHeader,
   ModalOverlay,
 } from "@chakra-ui/react";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 const PaymentSuccess = ({ isOpen, onClose }) => {
   return (
     <div className="mx-auto font-lato px-4 ">
@@ -25,9 +26,9 @@ const PaymentSuccess = ({ isOpen, onClose }) => {
             <button
               // mr={3}
               onClick={onClose}
-              className="w-5 h-5 border border-black rounded-full flex items-center justify-center text-sm font-bold absolute right-4"
+              className=" absolute right-4"
             >
-              x
+              <IoIosCloseCircleOutline />
             </button>
           </ModalHeader>
           <ModalBody className="flex flex-col items-center justify-center gap-4 mt-4  mb-10 font-lato">

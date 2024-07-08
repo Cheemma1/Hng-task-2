@@ -20,9 +20,20 @@ const CartProduct = () => {
           <div key={items.id} className="flex-shrink-0 w-[250px]">
             <img src={items.img} alt="product-img" className="object-cover" />
             <div className="px-2 py-4">
-              <p className="font-bold text-sm">{items.name}</p>
-              <p className="text-sm">{items.size}</p>
+              <p className="font-bold text-[16px]">{items.name}</p>
+              <p className="text-sm font-semibold md:text-[14px]">
+                Size{items.size}
+              </p>
+              <p className="text-sm font-semibold md:text-[12px]">
+                Price: NGN 500,00
+              </p>
             </div>
+            <button
+              className="bg-transparent border border-lightGrey text-black rounded-lg h-[48px] w-full flex items-center justify-center gap-4  mt-8"
+              // onClick={() => handleAddToCart(item)}
+            >
+              <span>+</span>Add to cart
+            </button>
           </div>
         ))}
       </div>

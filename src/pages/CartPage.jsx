@@ -172,6 +172,7 @@ import {
   ModalOverlay,
 } from "@chakra-ui/react";
 import React from "react";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 import carticon from "../assets/shopping-cart.png";
 import { CheckCircleIcon } from "@chakra-ui/icons";
 import img1 from "../assets/bed13.png";
@@ -183,12 +184,6 @@ import CartProduct from "../components/CartProduct";
 
 const CartPage = ({ isOpen, onClose }) => {
   const item = [
-    {
-      img: img1,
-      name: "King Size Bedding Platform",
-      inches: "30 inches",
-      price: "NGN 500,000",
-    },
     {
       img: img1,
       name: "King Size Bedding Platform",
@@ -221,16 +216,15 @@ const CartPage = ({ isOpen, onClose }) => {
         <ModalHeader>
           <div className="flex items-center justify-between pb-1 font-lato px-2">
             <img src={carticon} alt="cart-icon" className="w-6 h-6" />
-            <h2 className="font-bold">REVIEW YOUR CART</h2>
-            <button
-              onClick={onClose}
-              className="w-5 h-5 border border-black rounded-full flex items-center justify-center text-sm font-bold"
-            >
-              x
+            <h2 className="font-bold text-sm md:text-[1rem]">
+              REVIEW YOUR CART
+            </h2>
+            <button onClick={onClose}>
+              <IoIosCloseCircleOutline />
             </button>
           </div>
           <div className="h-px bg-lineClr"></div>
-          <p className="text-center text-green-600 text-[0.6rem] pt-4 flex items-center gap-1 justify-center mt-6">
+          <p className="text-center text-green-600 text-[0.8rem] pt-4 flex items-center gap-1 justify-center mt-6">
             <CheckCircleIcon />
             WORLDWIDE SHIPMENT + EASY RETURN
           </p>
@@ -240,26 +234,37 @@ const CartPage = ({ isOpen, onClose }) => {
           <div className="mt-4">
             {item.map((items, index) => (
               <div key={index} className="mb-6">
-                <div className="flex flex-col sm:flex-row items-start justify-between gap-4 font-lato">
+                <div className="flex items-start justify-between gap-4 font-lato">
                   <img
                     src={items.img}
                     alt={items.name}
-                    className="w-full sm:w-[30%] object-cover"
+                    className="w-[20%] object-cover"
                   />
-                  <div className="flex flex-col">
-                    <p className="font-bold">{items.name}</p>
-                    <p className="font-medium">{items.inches}</p>
-                    <p className="font-medium">{items.price}</p>
-                    <p className="font-medium">Warranty years: 1 year</p>
-                    <p className="text-red-600 text-sm font-medium cursor-pointer hover:underline mt-2">
+                  <div className="flex flex-col gap-1">
+                    <p className="font-bold text">{items.name}</p>
+                    <p className="text-sm font-semibold">Size:{items.inches}</p>
+                    <p className="font-semibold text-sm">Price:{items.price}</p>
+                    <p className="font-medium text-xs">
+                      Warranty years: 1 year
+                    </p>
+                    <p className="text-red-600 text-xs font-medium cursor-pointer pt-1">
                       REMOVE
                     </p>
+                    <div className="flex md:hidden items-center justify-center gap-2 mt-2 border border-black rounded-md h-[30px] w-[40%] px-2">
+                      <button className="border border-black rounded-full w-5 h-5 flex items-center justify-center">
+                        -
+                      </button>
+                      <p>1</p>
+                      <button className="border border-black rounded-full w-5 h-5 flex items-center justify-center">
+                        +
+                      </button>
+                    </div>
                   </div>
-                  <div className="flex items-center justify-center gap-2 mt-2 border border-black rounded-md h-[30px] w-[30%]  sm:w-[12%] px-2">
+                  <div className="hidden md:flex items-center justify-center gap-2 mt-2 border border-black rounded-md h-[30px] w-[10%]  px-2">
                     <button className="border border-black rounded-full w-5 h-5 flex items-center justify-center">
                       -
                     </button>
-                    <p>2</p>
+                    <p>1</p>
                     <button className="border border-black rounded-full w-5 h-5 flex items-center justify-center">
                       +
                     </button>
@@ -272,8 +277,8 @@ const CartPage = ({ isOpen, onClose }) => {
 
           <CartProduct />
           <div className="flex items-center justify-between font-normal font-lato">
-            <p>SUBTOTAL:</p>
-            <p>NGN 1,000,000</p>
+            <p className="font-bold">SUBTOTAL:</p>
+            <p className="font-medium">NGN 1,000,000</p>
           </div>
           <Link
             to={"/checkout"}
@@ -282,7 +287,7 @@ const CartPage = ({ isOpen, onClose }) => {
             <img src={cartWhite} alt="cart icon" className="mr-2" />
             <span>Checkout</span>
           </Link>
-          <p className="font-medium font-lato">
+          <p className="font-medium font-lato text-xs md:text-sm">
             By clicking on “CHECKOUT”, you will be directed to the checkout page
             where payment will be taken and your order fulfilled using your
             payment card. Note that we “ONLY” accept valid payment cards

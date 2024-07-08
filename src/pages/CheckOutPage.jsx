@@ -6,38 +6,24 @@ import cartWhite from "../assets/shopping-cart-white.png";
 import arrowLeft from "../assets/arrow-left.svg";
 import { useDisclosure } from "@chakra-ui/react";
 import CartPage from "./CartPage";
-import { HamburgerIcon } from "@chakra-ui/icons";
-import cartImg from "../assets/shopping-cart.png";
-import logo from "../assets/logo.png";
-import search from "../assets/search-normal.png";
+// import { HamburgerIcon } from "@chakra-ui/icons";
+// import cartImg from "../assets/shopping-cart.png";
+// import logo from "../assets/logo.png";
+// import search from "../assets/search-normal.png";
+import NavPay from "../components/NavPay";
 const CheckOutPage = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
       <div className=" font-lato bg-babyWhite  ">
-        <nav className="bg-white flex md:hidden items-center justify-between container mx-auto py-4 px-4 ">
-          <HamburgerIcon />
-          <div>
-            <img src={logo} alt="shop-haven-logo" className="w-[60px]" />
-          </div>
-          <div className="flex items-center gap-4">
-            <img src={search} alt="saerch-png" className="w-5" />
-
-            <button onClick={onOpen} className="relative rounded-full p-2">
-              <img src={cartImg} alt="cart-png" className="w-5" />
-              <span className="absolute top-2 right-2 transform translate-x-1/2 -translate-y-1/2 bg-red-700 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
-                {/* {cart.cartItems.length} */} 0
-              </span>
-            </button>
-          </div>
-        </nav>
+        <NavPay />
         <div className="container mx-auto pt-4">
           <Link to={"/"} className="hidden md:block">
             {" "}
             <img src={arrowLeft} alt="arrowleft" className="w-6" />
           </Link>
           <div className=" py-8 grid grid-cols-1  gap-6 lg:grid-cols-2   ">
-            <div className="px-">
+            <div className="px-2">
               <div className=" border border-lightGrey rounded-md px-4  bg-white pt-4 pb-10 w-full">
                 <div className="flex items-center justify-between border border-lightGrey rounded-md p-4 mb-10">
                   <div>

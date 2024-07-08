@@ -22,7 +22,7 @@ const MobHeader = () => {
           <button onClick={onOpen} className="relative rounded-full p-2">
             <img src={cartImg} alt="cart-png" className="w-5" />
             <span className="absolute top-2 right-2 transform translate-x-1/2 -translate-y-1/2 bg-red-700 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
-              {/* {cart.cartItems.length} */} 0
+              {/* {cart.cartItems.length} */} 1
             </span>
           </button>
         </div>
