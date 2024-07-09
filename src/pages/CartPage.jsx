@@ -98,7 +98,7 @@ const CartPage = ({ isOpen, onClose }) => {
                     <button className="border border-black rounded-full w-5 h-5 flex items-center justify-center">
                       -
                     </button>
-                    <p>1</p>
+                    <p>2</p>
                     <button className="border border-black rounded-full w-5 h-5 flex items-center justify-center">
                       +
                     </button>
