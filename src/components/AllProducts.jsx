@@ -43,7 +43,7 @@ const AllProducts = () => {
   return (
     <>
       <div>
-        <div className="container mx-auto grid grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 my-6 px-4 lg:px-0">
+        <div className="container w-full lg:w-[1440px] mx-auto grid grid-cols-2 lg:grid-cols-3 gap-x-12  gap-y-20 my-6 px-4 lg:px-0">
           {allProducts.map((item) => {
             // Find the cart item for the current product
             // const cartItem = cart.cartItems.find(

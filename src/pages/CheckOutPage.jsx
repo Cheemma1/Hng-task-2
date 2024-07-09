@@ -133,9 +133,9 @@ const CheckOutPage = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <div className="font-lato bg-babyWhite">
+      <div className="font-lato bg-babyWhite ">
         <NavPay />
-        <div className="container mx-auto pt-4 px-4 md:px-0">
+        <div className="container mx-auto   pt-4 px-4 md:px-0">
           <Link to={"/"} className="">
             <img src={arrowLeft} alt="Back" className="w-6" />
           </Link>

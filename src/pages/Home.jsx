@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="bg-babyWhite">
+    <div className="bg-babyWhite ">
       {/* <WebNav /> */}
       <Header />
 

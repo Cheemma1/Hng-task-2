@@ -10,7 +10,7 @@ const PayNow = () => {
   return (
     <div className="">
       <NavPay />
-      <div className="w-full lg:w-[80%] container mx-auto px-4 lg:px-0 mb-6">
+      <div className="w-full lg:w-[60%] container mx-auto px-4 lg:px-0 mb-6">
         <Link to={"/checkout"} className="">
           <img src={arrowLeft} alt="arrowleft" className="w-6 mt-4" />
         </Link>

@@ -35,7 +35,6 @@ import {
   MenuItem,
   Divider,
   Stack,
-
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
@@ -47,7 +46,7 @@ const FlashSale = () => {
   };
 
   return (
-    <div className="container mx-auto font-lato my-8 flex  flex-col md:flex-row  items-end gap-2  md:gap-0 justify-right md:items-center md:justify-between px-4 lg:px-0">
+    <div className="container mx-auto font-lato my-8 flex  flex-col w-full lg:w-[1440px] md:flex-row  items-end gap-2  md:gap-0 justify-right md:items-center md:justify-between px-4 lg:px-0">
       <p className="font-bold">Flash Sale: 23: 20:01</p>
       <Stack spacing={3}>
         <Menu>
