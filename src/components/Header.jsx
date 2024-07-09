@@ -89,23 +89,17 @@ const Header = () => {
   return (
     <>
       {/* Desktop Header */}
-      <div className="hidden md:block">
+      <div className="hidden md:block lg:w-[1440px] mx-auto">
         <nav className="bg-babyWhite flex items-center justify-between container mx-auto py-4 px-4 lg:px-0">
           <div className="flex items-center gap-4 font-lato relative">
             <Link to="/" className="font-medium cursor-pointer">
               Type
               <div className="absolute bottom-[-2px] left-0 w-[20%] h-[2px] bg-black"></div>
             </Link>
-            <Link
-              to="/"
-              className="hover:underline font-medium cursor-pointer"
-            >
+            <Link to="/" className="hover:underline font-medium cursor-pointer">
               Hot Deals
             </Link>
-            <Link
-              to="/"
-              className="hover:underline font-medium cursor-pointer"
-            >
+            <Link to="/" className="hover:underline font-medium cursor-pointer">
               Brand
             </Link>
           </div>
