@@ -12,7 +12,7 @@ const CartProduct = () => {
 
   return (
     <div className="font-lato mb-16">
-      <h1 className="font-bold md:text-3xl py-6 px-2 mt-14 text-center">
+      <h1 className="font-bold text-base md:text-3xl py-6 px-2 mt-14 text-center">
         YOU MAY ALSO LIKE
       </h1>
       <div className="flex gap-6 overflow-x-auto px-4 md:px-0 max-w-full scrollbar-hide">
@@ -22,9 +22,9 @@ const CartProduct = () => {
             <div className="px-2 py-4">
               <p className="font-bold text-[16px]">{items.name}</p>
               <p className="text-sm font-semibold md:text-[14px]">
-                Size{items.size}
+                Size:{items.size}
               </p>
-              <p className="text-sm font-semibold md:text-[12px]">
+              <p className="text-xs font-semibold md:text-[12px]">
                 Price: NGN 500,00
               </p>
             </div>
