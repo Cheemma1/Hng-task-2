@@ -11,14 +11,15 @@ const MobHeader = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <div>
-      <nav className="bg-babyWhite flex items-center justify-between container mx-auto py-4 px-4 ">
-        <HamburgerIcon />
-        <div>
+      <nav className="bg-babyWhite flex items-center justify-between container mx-auto py-4 px-4">
+        <div className="flex items-center gap-4">
+          <HamburgerIcon />
+        </div>
+        <div className="flex justify-center">
           <img src={logo} alt="shop-haven-logo" className="w-[60px]" />
         </div>
         <div className="flex items-center gap-4">
-          <img src={search} alt="saerch-png" className="w-5" />
-
+          <img src={search} alt="search-png" className="w-5" />
           <button onClick={onOpen} className="relative rounded-full p-2">
             <img src={cartImg} alt="cart-png" className="w-5" />
             <span className="absolute top-2 right-2 transform translate-x-1/2 -translate-y-1/2 bg-red-700 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
@@ -27,6 +28,7 @@ const MobHeader = () => {
           </button>
         </div>
       </nav>
+
       <div className="bg-headerMob-pattern bg-no-repeat w-full bg-cover">
         <div className=" font-lato  mx-auto text-white text-center py-12  w-[280px]">
           <h1 className="pb-2 text-4xl font-bold"> New Arrivals!!!</h1>

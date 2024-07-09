@@ -72,7 +72,7 @@ const CartPage = ({ isOpen, onClose }) => {
                   <img
                     src={items.img}
                     alt={items.name}
-                    className="w-[20%] object-cover"
+                    className="w-[40%] object-cover"
                   />
                   <div className="flex flex-col gap-1">
                     <p className="font-bold text">{items.name}</p>
@@ -84,11 +84,11 @@ const CartPage = ({ isOpen, onClose }) => {
                     <p className="text-red-600 text-xs font-medium cursor-pointer pt-1">
                       REMOVE
                     </p>
-                    <div className="flex md:hidden items-center justify-center gap-2 mt-2 border border-black rounded-md h-[30px] w-[40%] px-2">
+                    <div className="flex md:hidden items-center justify-center gap-2 mt-2 border border-black rounded-md h-[30px] w-[50%] px-2">
                       <button className="border border-black rounded-full w-5 h-5 flex items-center justify-center">
                         -
                       </button>
-                      <p>1</p>
+                      <p>2</p>
                       <button className="border border-black rounded-full w-5 h-5 flex items-center justify-center">
                         +
                       </button>
