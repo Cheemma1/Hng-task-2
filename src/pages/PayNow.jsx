@@ -20,21 +20,23 @@ const PayNow = () => {
             <h1 className="pb-8 font-bold text-lg lg:text-2xl">Payment</h1>
             <div className="flex flex-col gap-8">
               <div className="flex justify-between">
-                <h2 className="font-bold text-sm lg:text-base">Item Name:</h2>
-                <p className="text-sm lg:text-base">
+                <h2 className=" text-sm lg:text-base">Item:</h2>
+                <p className="text-sm lg:text-base font-semibold">
                   Kingsize Bedding and Platform
                 </p>
               </div>
               <div className="flex justify-between">
-                <h2 className="font-bold text-sm lg:text-base">Amount:</h2>
-                <p className="text-sm lg:text-base">NGN 500,000</p>
+                <h2 className=" text-sm lg:text-base">Amount:</h2>
+                <p className="text-sm lg:text-base font-semibold">
+                  NGN 1,000,000
+                </p>
               </div>
               <div className="h-px w-full bg-lineClr"></div>
               <div className="flex justify-between">
-                <h2 className="font-bold text-sm lg:text-base">
-                  Amount to pay:
-                </h2>
-                <p className="text-sm lg:text-base">NGN 500,000</p>
+                <h2 className=" text-sm lg:text-base">Amount to pay:</h2>
+                <p className="text-sm lg:text-base font-semibold">
+                  NGN 1,000,000
+                </p>
               </div>
             </div>
             <div className="flex gap-1 mt-8 lg:mt-40">
@@ -69,7 +71,7 @@ const PayNow = () => {
                 />
               </div>
               <div className="w-full lg:w-1/2">
-                <h2 className="text-sm lg:text-base">CSV/CVV</h2>
+                <h2 className="text-sm lg:text-base">CVC/CVV</h2>
                 <input
                   type="text"
                   className="w-full border-b border-black outline-none bg-transparent text-sm lg:text-base"
