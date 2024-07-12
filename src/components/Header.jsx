@@ -89,7 +89,7 @@ const Header = () => {
   return (
     <>
       {/* Desktop Header */}
-      <div className="hidden md:block lg:w-[1440px] mx-auto">
+      <div className="hidden md:block  mx-auto">
         <nav className="bg-babyWhite flex items-center justify-between container mx-auto py-4 px-4 lg:px-0">
           <div className="flex items-center gap-4 font-lato relative">
             <Link to="/" className="font-medium cursor-pointer">
